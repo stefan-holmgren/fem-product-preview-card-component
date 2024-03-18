@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <main class="product-preview-card">
+      <picture>
+        <source media="(max-width: 23.5rem)" srcset="./images/image-product-mobile.jpg" />
+        <source srcset="./images/image-product-desktop.jpg" />
+        <img src="./images/image-product-mobile.jpg" alt="product image" />
+      </picture>
+      <section class="product-information">
+        <p class="product-label">Perfume</p>
+        <h1 class="product-title">Gabrielle Essence Eau De Parfum</h1>
+        <p class="product-description">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of
+          CHANEL.
+        </p>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+        <div class="product-price-container">
+          <span class="product-current-price">$149.99</span>
+          <span class="product-previous-price">$169.99</span>
+        </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Perfume
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <a href="#" class="button">
+          <img src="./images/icon-cart.svg" alt="" />
+          Add to Cart</a
+        >
+      </section>
+    </main>
+  </body>
 </html>

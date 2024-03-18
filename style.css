@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: unset;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+picture,
+svg,
+canvas {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --fs-xs: 0.75rem;
+  --fs-s: 0.8125rem;
+  --fs-m: 0.875rem;
+  --fs-l: 2rem;
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --font-body: "Montserrat", sans-serif;
+  --font-heading: "Fraunces", serif;
+
+  --color-background: hsl(30, 38%, 92%);
+  --color-card-background: hsl(0, 0%, 100%);
+  --color-primary-500: hsl(228, 12%, 48%);
+  --color-primary-100: hsl(212, 21%, 14%);
+  --color-accent: hsl(158, 36%, 37%);
+}
+
+body {
+  background-color: var(--color-background);
+  padding: 1.75rem 1rem;
+}
+
+.product-preview-card {
+  background-color: var(--color-card-background);
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.product-information {
+  padding: 1.5rem;
+  color: var(--color-primary-500);
+}
+
+.product-title,
+.product-current-price {
+  font-family: var(--font-heading);
+  font-size: var(--fs-l);
+  line-height: 1;
+  font-weight: var(--fw-bold);
+}
+
+.product-title {
+  margin-top: 0.75rem;
+  color: var(--color-primary-100);
+}
+
+.product-description {
+  margin-top: 1rem;
+}
+
+.product-price-container {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.product-current-price {
+  color: var(--color-accent);
+}
+
+.product-previous-price {
+  font-family: var(--font-body);
+  font-size: var(--fs-s);
+  text-decoration: line-through;
+}
+
+.product-label {
+  font-family: var(--font-body);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-normal);
+  text-transform: uppercase;
+  letter-spacing: 0.3125rem;
+}
+
+.product-description {
+  font-size: var(--fs-m);
+  font-family: var(--font-body);
+  line-height: 1.64;
+}
+
+.button {
+  margin-top: 1.25rem;
+  font-family: var(--font-body);
+  font-size: var(--fs-m);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  color: var(--color-card-background);
+  background-color: var(--color-accent);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
